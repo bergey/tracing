@@ -245,7 +245,7 @@ where
             }
 
             if self.display_level {
-                serializer.serialize_entry("level", &meta.level().as_serde())?;
+                serializer.serialize_entry("severity", &meta.level().as_serde())?;
             }
 
             let format_field_marker: std::marker::PhantomData<N> = std::marker::PhantomData;
