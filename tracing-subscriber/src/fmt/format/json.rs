@@ -241,7 +241,7 @@ where
             let mut serializer = serializer.serialize_map(None)?;
 
             if self.display_timestamp {
-                serializer.serialize_entry("timestamp", &timestamp)?;
+                serializer.serialize_entry("time", &timestamp)?;
             }
 
             if self.display_level {
